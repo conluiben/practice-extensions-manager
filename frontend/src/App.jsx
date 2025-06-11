@@ -28,7 +28,7 @@ function App() {
     );
   }
   function removeExt(extName) {
-    addLog("Removed an extension!");
+    addLog("Removed the " + extName + " extension!");
     setAllExtensions((prevState) =>
       prevState.filter((anExt) => anExt.name !== extName)
     );
